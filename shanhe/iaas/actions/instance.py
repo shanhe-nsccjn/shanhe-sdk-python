@@ -135,7 +135,7 @@ class InstanceAction(object):
         @param hypervisor: kvm,
         @param gpu: int,
         @param gpu_class: int,
-        @place_group_id: string,
+        @param place_group_id: string,
         """
         action = const.ACTION_RUN_INSTANCES
         valid_keys = ['image_id', 'instance_type', 'cpu', 'memory', 'count',
@@ -144,7 +144,9 @@ class InstanceAction(object):
                       'volumes', 'need_userdata', 'userdata_type',
                       'userdata_value', 'userdata_path', 'instance_class',
                       'hostname', 'target_user', 'nic_mqueue', 'cpu_max', 'mem_max',
-                      'os_disk_size', 'cpu_model'
+                      'os_disk_size', 'cpu_model', 'os_disk_encryption', 'platform',
+                      'f_resetpwd', 'processor_type', 'default_user', 'default_passwd',
+                      'hypervisor', 'gpu', 'gpu_class', 'place_group_id'
                       ]
         body = filter_out_none(locals(), valid_keys)
         if not self.conn.req_checker.check_params(body,

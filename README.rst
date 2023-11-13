@@ -18,17 +18,15 @@ This SDK is licensed under
 Installation
 ------------
 
-Install via `pip <http://www.pip-installer.org>`_ ::
+Install via `downloa <https://github.com/shanhe-nsccjn/shanhe-sdk-python/archive/main.zip>`_ ::
 
-    $ pip install shanhe-sdk
+    cd shanhe-sdk-python
+    python setup.py install
 
-Upgrade to the latest version ::
-
-    $ pip install --upgrade shanhe-sdk
 
 Install from source ::
 
-    git clone https://gitee.com/shanhe-nsccjn/shanhe-sdk-python.git
+    https://github.com/shanhe-nsccjn/shanhe-sdk-python/archive/main.zip
     cd shanhe-sdk-python
     python setup.py install
 
